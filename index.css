@@ -245,6 +245,7 @@ a
     width: 24px;
     height: 22px;
     text-align: center;
+    line-height: 22px;
     color: #fff;
     font-weight: bold;
     background: url('images/circle-yellow.png') left top no-repeat;
@@ -379,8 +380,6 @@ main
     width: 100%;
     position: relative;
     overflow: hidden;
-
-    margin-bottom: 10px;
 }
 
 .main-news a
@@ -428,6 +427,23 @@ main
     border-right: 1px solid #999;
     font-size: .8em;
     text-transform: uppercase;
+    height: 15px;
+    line-height: 15px;
+}
+
+.section-header a
+{
+    padding-right: 7px;
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    font-size: .8em;
+    color: #666;
+}
+
+.section-header a:before
+{
+    content: '⊳ ';
 }
 
 .news img
@@ -436,7 +452,7 @@ main
     margin-right: 15px;
 }
 
-.news article
+article
 {
     margin: 13px 0;
 }
@@ -453,14 +469,11 @@ main
     width: 100%;
     margin: 0;
     padding: 0;
-
-    font-size: .85em;
 }
 
 .news article a
 {
     font-weight: bold;
-    font-size: .9em;
     color: #000;
 }
 
@@ -495,10 +508,10 @@ main
 .main-news .main-news-content
 {
     color: #fff;
-    padding: 0;
     margin: 0;
-    padding-left: 10px;
-    font-size: 1.2em;
+    padding: 0 10px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 .main-news .main-news-content
@@ -509,4 +522,68 @@ main
 .bold
 {
     font-weight: bold;
+}
+
+.other-news .additional,
+.announcement
+{
+    display: flex;
+}
+
+.additional img,
+.announcement img
+{
+    align-self: flex-start;
+    margin-right: 15px;
+}
+
+.description-title
+{
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ff5200;
+}
+
+.description a,
+.nav-links a,
+.announcement-description a,
+.announcements a
+{
+    color: #196199;
+}
+
+.special
+{
+    color: #ff5200;
+}
+
+.schedule,
+.schedule td,
+.schedule tr
+{
+    border-collapse: collapse;
+    border: 1px solid #808080;
+}
+
+article
+{
+    font-size: .85em;
+}
+
+select,
+.button_orange
+{
+    font-size: .9em;
+}
+
+.button_orange
+{
+    background-color: #ff5200;
+    color: #fff;
+}
+
+.purchases
+{
+    display: flex;
+    align-items: center;
 }
